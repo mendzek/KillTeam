@@ -1,0 +1,211 @@
+﻿<Window x:Class="Kill_Team.List"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kill_Team"
+        mc:Ignorable="d"
+        Title="List" Height="900" Width="950" MaxHeight="900" MaxWidth="950" MinHeight="900" MinWidth="950" Background="DarkSlateGray">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="26"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="3"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="10"></ColumnDefinition>
+            <ColumnDefinition Width="40"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="40"></ColumnDefinition>
+            <ColumnDefinition Width="10"></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+
+
+        <Border
+            Background="OrangeRed" 
+            Grid.Column="0"
+            Grid.ColumnSpan="8"
+            Panel.ZIndex="1" />
+        <Button
+            Name="On_Main"
+            Content="On Main"
+            Background="OrangeRed"
+            Foreground="White"
+            FontWeight="Bold"
+            Grid.ColumnSpan="2"
+            Grid.RowSpan="1"
+            Grid.Row="0"
+            Grid.Column="1"
+            Panel.ZIndex="2" 
+            FontSize="15"
+            Width="80"
+            HorizontalAlignment="Left"
+            Click="On_Main_Click"/>
+        <Button
+            Name="Save"
+            Content="Save"
+            Background="OrangeRed"
+            Foreground="White"
+            FontWeight="Bold"
+            Grid.ColumnSpan="2"
+            Grid.RowSpan="1"
+            Grid.Row="0"
+            Grid.Column="1"
+            Panel.ZIndex="2" 
+            FontSize="15"
+            Width="80"
+            HorizontalAlignment="Center"
+            Click="Save_Click"/>
+        <ScrollViewer
+            Grid.ColumnSpan="8"
+            Grid.RowSpan="6"
+            Grid.Row="1"
+            Grid.Column="0">
+            <Grid>
+                
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="26"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="3"></RowDefinition>
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="10"></ColumnDefinition>
+                    <ColumnDefinition Width="40"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="40"></ColumnDefinition>
+                    <ColumnDefinition Width="10"></ColumnDefinition>
+
+                </Grid.ColumnDefinitions>
+                
+                
+                <Border
+            Background="DimGray" 
+            Grid.ColumnSpan="2"
+            Grid.RowSpan="7"
+            Grid.Row="0"
+            Grid.Column="0"
+            Panel.ZIndex="0" />
+                <Border
+            Background="DimGray" 
+            Grid.ColumnSpan="2"
+            Grid.RowSpan="7"
+            Grid.Row="0"
+            Grid.Column="6"
+            Panel.ZIndex="0" />
+                <Border
+            Background="DimGray" 
+            Grid.ColumnSpan="4"
+            Grid.RowSpan="1"
+            Grid.Row="0"
+            Grid.Column="2"
+            Panel.ZIndex="0" />
+                <StackPanel
+                    Background="DarkGray"
+                    Grid.ColumnSpan="4"
+                    Grid.RowSpan="6"
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    Panel.ZIndex="2">
+
+                    <TextBlock
+                                    Name="NameOfKT"
+                                    Background="DarkGray"
+                                    Foreground="Black"
+                                    FontWeight="Bold"              
+                                    Panel.ZIndex="2"
+                                    HorizontalAlignment="Left"
+                                    FontSize="50"
+                                    Margin="10"/>
+                    <TextBox
+                                    AcceptsReturn="True" 
+                                    TextWrapping="Wrap"
+                                    Name="TacOps"
+                                    Background="DarkGray"
+                                    Foreground="Black"
+                                    BorderBrush="DarkGray"
+                                    BorderThickness="3"
+                                    FontWeight="Bold"
+                                    Panel.ZIndex="2" 
+                                    FontSize="15"
+                                    Margin="10"/>
+                    <TextBox
+                                    AcceptsReturn="True" 
+                                    TextWrapping="Wrap"
+                                    Name="Equipment"
+                                    Background="DarkGray"
+                                    Foreground="Black"
+                                    BorderBrush="DarkGray"
+                                    BorderThickness="3"
+                                    FontWeight="Bold"
+                                    Panel.ZIndex="2" 
+                                    FontSize="15"
+                                    Margin="10"/>
+                    <TextBox
+                                    AcceptsReturn="True" 
+                                    TextWrapping="Wrap"
+                                    Name="Other"
+                                    Background="DarkGray"
+                                    Foreground="Black"
+                                    BorderBrush="DarkGray"
+                                    BorderThickness="3"
+                                    FontWeight="Bold"
+                                    Panel.ZIndex="2" 
+                                    FontSize="15"
+                                    Margin="10"/>
+                    <TextBox
+                                    AcceptsReturn="True" 
+                                    TextWrapping="Wrap"
+                                    Name="Active"
+                                    Background="DarkGray"
+                                    Foreground="Black"
+                                    BorderBrush="DarkGray"
+                                    BorderThickness="3"
+                                    FontWeight="Bold"
+                                    Panel.ZIndex="2" 
+                                    FontSize="15"
+                                    Margin="10"/>
+
+                </StackPanel>
+                
+
+                <!--<Button
+                    Name="Test4"
+                    Content="Test"
+                    FontSize="30"
+                    Width="280"
+                    Height="80"
+                    Background="OrangeRed"
+                    Foreground="White"
+                    FontWeight="Bold"
+                    Grid.ColumnSpan="3"
+                    Grid.RowSpan="1"
+                    Grid.Row="6"
+                    Grid.Column="1"
+                    Panel.ZIndex="2"/>
+                --><!--Test Button-->
+
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Window>
